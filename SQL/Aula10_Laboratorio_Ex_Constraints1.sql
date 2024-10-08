@@ -10,10 +10,10 @@ USE livraria
 
 CREATE TABLE Livro (
 
-Codigo		INT					NOT NULL,
+Codigo		INT					NOT NULL		IDENTITY(100001, 100),
 Nome		VARCHAR(200)		NOT NULL,
-Lingua		VARCHAR(10)			NOT NULL,
-Ano			INT					NOT NULL
+Lingua		VARCHAR(10)			NOT NULL		DEFAULT('PT-BR'),
+Ano			INT					NOT NULL		CHECK(Ano >= 1990),
 
 PRIMARY KEY(Codigo)
 
@@ -22,10 +22,13 @@ GO
 
 CREATE TABLE Autor (
 
-ID_Autor		INT					NOT NULL,
-Nome			VARCHAR(100)		NOT NULL,
+ID_Autor		INT					NOT NULL		IDENTITY(2351, 1),
+Nome			VARCHAR(100)		NOT NULL		UNIQUE,
 Data_nasc		DATE				NOT NULL,
-Pais_Nasc		VARCHAR(50)			NOT NULL,
+Pais_Nasc		VARCHAR(50)			NOT NULL		CHECK(UPPER(Pais_Nasc) = 'BRASIL' OR 
+														  UPPER(Pais_Nasc) = 'ESTADOS UNIDOS' OR 
+														  UPPER(Pais_Nasc) = 'INGLATERRA' OR 
+														  UPPER(Pais_Nasc) = 'ALEMANHA'),
 Biografia		VARCHAR(255)		NOT NULL
 
 PRIMARY KEY(ID_Autor)
@@ -47,8 +50,8 @@ GO
 
 CREATE TABLE Editora (
 
-ID_Editora					INT					NOT NULL,
-Nome						VARCHAR(70)			NOT NULL,
+ID_Editora					INT					NOT NULL		IDENTITY(491, 16),
+Nome						VARCHAR(70)			NOT NULL		UNIQUE,
 Telefone					VARCHAR(11)			NOT NULL,
 Logradouro_Endereco			VARCHAR(200)		NOT NULL,
 Numero_Endereco				VARCHAR(10)			NOT NULL,
@@ -62,7 +65,7 @@ GO
 
 CREATE TABLE Edicao (
 
-ISBN				CHAR(13)			NOT NULL,
+ISBN				CHAR(13)			NOT NULL		CHECK(LEN(ISBN) = 13),
 Preco				DECIMAL(4, 2)		NOT NULL,
 Ano					INT					NOT NULL,
 Numero_Paginas		INT					NOT NULL,

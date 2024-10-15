@@ -52,6 +52,8 @@
 
 ## [ ❌ ] Exercício da Aula 10 - Constraints 3
 
+(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Aula10_Casa_Ex_Constraints3.sql)
+
 ### Descrição:
 
 - [ ❌ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma Maternidade, implementado na aula passada(https://pastebin.com/AuAJFJgP), conforme modelado:

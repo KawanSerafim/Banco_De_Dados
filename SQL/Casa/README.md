@@ -14,7 +14,7 @@
 
 - [ ❌ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma mecânica, conforme modelado:
 
-![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Imagens/Captura%20de%20tela%202024-10-15%20151438.png)
+![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.59.33_12ff2830.jpg)
 
 - Foram delimitadas as seguintes restrições:
     - [ ❌ ] - *O ID do cliente é auto incremental partindo de 3401 e incrementando de 15 em 15*
@@ -47,3 +47,45 @@
 ## **Feito por 👤**
 
 - [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)
+
+========================================================================================================================================================================================
+
+## [ ❌ ] Exercício da Aula 10 - Constraints 3
+
+### Descrição:
+
+- [ ❌ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma Maternidade, implementado na aula passada(https://pastebin.com/AuAJFJgP), conforme modelado:
+
+![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.50.28_25733604.jpg)
+
+- Foram delimitadas as seguintes restrições:
+
+    - *Para a tabela mãe:*
+
+        - [ ❌ ] - *O ID é auto incremental, iniciando em 1001 e indo de 1 em 1*
+        - [ ❌ ] - *Número de porta não pode ser negativo*
+        - [ ❌ ] - *CEP deve ter 8 dígitos*
+        - [ ❌ ] - *Telefone deve ter 10 dígitos*
+
+    - *Para a tabela medico:*
+
+        - [ ❌ ] - *Celular deve ter 11 dígitos*
+        - [ ❌ ] - *Celular não pode repetir*
+
+    - *Para a tabela bebe:*
+
+        - [ ❌ ] - *O ID é auto incremental, iniciando em 1 e indo de 1 em 1*
+        - [ ❌ ] - *Se não preenchida, a data de nascimento é o dia de hoje*
+        - [ ❌ ] - *Altura não pode ser negativa*
+        - [ ❌ ] - *Peso não pode ser negativo*
+
+## **Tecnologia(s) utilizadas neste exercício 💻**
+<div style="display: inline_block">
+    <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+</div><br/>
+
+## **Feito por 👤**
+
+- [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)
+
+========================================================================================================================================================================================

@@ -1,34 +1,29 @@
 /*
-RESTRI«’ES DO EXERCÕCIO
+RESTRI√á√ïES DO EXERC√çCIO
 
-- O cÛdigo do livro È auto incremental partindo de 100001 e incrementando de 100 em 100
-- O cÛdigo do autor È auto incremental partindo de 2351 e incrementando de 1 em 1
-- O cÛdigo da editora È auto incremental partindo de 491 e incrementando de 16 em 16
-- Por lei, o ISBN deve ter 13 dÌgitos
-- O nome do autor È ˙nico
-- O nome da editora È ˙nico
-- Se n„o preenchida, a lÌngua dos livros È ëPT-BRí
-- N„o s„o cadastrados livros de ano inferior a 1990
-- N„o s„o cadastrados livros de ediÁ„o inferior a 1993
-- N„o existem preÁos negativos
-- N„o existem livros com menos de 15 p·ginas
-- N„o existem N˙meros de EndereÁos negativos
-- Telefones s„o fixos devem ter 10 dÌgitos
+- O c√≥digo do livro √© auto incremental partindo de 100001 e incrementando de 100 em 100
+- O c√≥digo do autor √© auto incremental partindo de 2351 e incrementando de 1 em 1
+- O c√≥digo da editora √© auto incremental partindo de 491 e incrementando de 16 em 16
+- Por lei, o ISBN deve ter 13 d√≠gitos
+- O nome do autor √© √∫nico
+- O nome da editora √© √∫nico
+- Se n√£o preenchida, a l√≠ngua dos livros √© ‚ÄòPT-BR‚Äô
+- N√£o s√£o cadastrados livros de ano inferior a 1990
+- N√£o s√£o cadastrados livros de edi√ß√£o inferior a 1993
+- N√£o existem pre√ßos negativos
+- N√£o existem livros com menos de 15 p√°ginas
+- N√£o existem N√∫meros de Endere√ßos negativos
+- Telefones s√£o fixos devem ter 10 d√≠gitos
 - No Brasil, todo CEP tem 8 caracteres
-- SÛ s„o cadastrados livros de autores do Brasil, Estados Unidos, Inglaterra e Alemanha
+- S√≥ s√£o cadastrados livros de autores do Brasil, Estados Unidos, Inglaterra e Alemanha
 */
 
 
 CREATE DATABASE livraria
 GO
 USE livraria
-
-DROP DATABASE livraria
-CREATE DATABASE livraria
-
 GO
-USE livraria
-
+	
 CREATE TABLE Livro (
 
 Codigo		INT					NOT NULL		IDENTITY(100001, 100),

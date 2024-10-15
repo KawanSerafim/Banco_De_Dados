@@ -40,3 +40,8 @@
         - [ ❌ ] - *Nível 1: Mais de R$25,00 / hora*
         - [ ❌ ] - *Nível 2: Mais de R$35,00 / hora*
         - [ ❌ ] - *Nível 3: Mais de R$50,00 / hora*
+
+## **Tecnologia(s) utilizadas neste exercício 💻**
+<div style="display: inline_block">
+    <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+</div><br/>

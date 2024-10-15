@@ -1,12 +1,10 @@
 # **EXERCÍCIOS PARA CASA**
 
-- Guia de símbolos:
+## Guia de Símbolos:
 
     [ ❌ ] - Não finalizado.
 
     [ ✔️ ] - Finalizado.
-    
-- Aqui vão estar os exercícios propostos pelo meu professor, Leandro Colevati, para realizá-los em casa. São eles:
 
 ## [ ❌ ] Exercício da Aula 10 - Constraints 2
 

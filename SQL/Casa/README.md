@@ -50,13 +50,13 @@
 
 ========================================================================================================================================================================================
 
-## [ ❌ ] Exercício da Aula 10 - Constraints 3
+## [ ✔️ ] Exercício da Aula 10 - Constraints 3
 
 (🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Aula10_Casa_Ex_Constraints3.sql)
 
 ### Descrição:
 
-- [ ❌ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma Maternidade, implementado na aula passada(https://pastebin.com/AuAJFJgP), conforme modelado:
+- [ ✔️ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma Maternidade, implementado na aula passada(https://pastebin.com/AuAJFJgP), conforme modelado:
 
 ![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.50.28_25733604.jpg)
 
@@ -64,22 +64,22 @@
 
     - *Para a tabela mãe:*
 
-        - [ ❌ ] - *O ID é auto incremental, iniciando em 1001 e indo de 1 em 1*
-        - [ ❌ ] - *Número de porta não pode ser negativo*
-        - [ ❌ ] - *CEP deve ter 8 dígitos*
-        - [ ❌ ] - *Telefone deve ter 10 dígitos*
+        - [ ✔️ ] - *O ID é auto incremental, iniciando em 1001 e indo de 1 em 1*
+        - [ ✔️ ] - *Número de porta não pode ser negativo*
+        - [ ✔️ ] - *CEP deve ter 8 dígitos*
+        - [ ✔️ ] - *Telefone deve ter 10 dígitos*
 
     - *Para a tabela medico:*
 
-        - [ ❌ ] - *Celular deve ter 11 dígitos*
-        - [ ❌ ] - *Celular não pode repetir*
+        - [ ✔️ ] - *Celular deve ter 11 dígitos*
+        - [ ✔️ ] - *Celular não pode repetir*
 
     - *Para a tabela bebe:*
 
-        - [ ❌ ] - *O ID é auto incremental, iniciando em 1 e indo de 1 em 1*
-        - [ ❌ ] - *Se não preenchida, a data de nascimento é o dia de hoje*
-        - [ ❌ ] - *Altura não pode ser negativa*
-        - [ ❌ ] - *Peso não pode ser negativo*
+        - [ ✔️ ] - *O ID é auto incremental, iniciando em 1 e indo de 1 em 1*
+        - [ ✔️ ] - *Se não preenchida, a data de nascimento é o dia de hoje*
+        - [ ✔️ ] - *Altura não pode ser negativa*
+        - [ ✔️ ] - *Peso não pode ser negativo*
 
 ## **Tecnologia(s) utilizadas neste exercício 💻**
 <div style="display: inline_block">

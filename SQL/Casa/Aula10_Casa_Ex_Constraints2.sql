@@ -31,3 +31,4 @@ ClienteID			INT					NOT NULL
 FOREIGN KEY(ClienteID) REFERENCES Cliente(ID)
 
 )
+GO

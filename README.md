@@ -1,19 +1,24 @@
-# Banco de Dados
+# **Banco de Dados**
 
-## Modelagem DER
-
-Em desenvolvimento...
-
-## Programação em SQL
+## **Modelagem MER**
 
 Em desenvolvimento...
 
-## Tecnologias utilizadas neste repositório
+## **Programação em SQL**
+
+- O Modelo Relacional prevê, desde sua concepção, a existência de
+uma linguagem baseada em caracteres que suporte a definição do
+esquema físico (tabelas, restrições, etc.), e sua manipulação (inserção,
+consulta, atualização e remoção).
+
+- [Tarefas em SQL](https://github.com/KawanSerafim/Banco_De_Dados/tree/3f6fa93f0dd7ad5d5ae045b3e8073a91dd1802f2/SQL)
+
+## **Tecnologias utilizadas neste repositório**
 <div style="display: inline_block">
     <img align="center" alt="html5" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
 </div><br/>
 
-# Meus Contatos 📱
+# **Meus Contatos** 📱
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kawan-serafim/)
 <div style="display: inline_block">

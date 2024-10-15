@@ -16,7 +16,8 @@ consulta, atualização e remoção).
 
 ## **Tecnologias utilizadas neste repositório 💻**
 <div style="display: inline_block">
-    <img align="center" alt="html5" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
+    <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white
+" />
 </div><br/>
 
 # **Meus Contatos** 📱

@@ -6,7 +6,7 @@
 
     [ ✔️ ] - Finalizado.
 
-## [ ❌ ] Exercício da Aula 10 - Constraints 2
+## [ ✔️ ] Exercício da Aula 10 - Constraints 2
 
 (🗺️) - [[Caminho]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Aula10_Casa_Ex_Constraints2.sql)
 

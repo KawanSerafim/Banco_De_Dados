@@ -45,3 +45,7 @@
 <div style="display: inline_block">
     <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
 </div><br/>
+
+## **Feito por 👤**
+
+- [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)

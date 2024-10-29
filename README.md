@@ -21,7 +21,7 @@ consulta, atualização e remoção).
 
 ## **Créditos**
 
-- Deixo aqui meus agradecimentos ao Leandro Colevati dos Santos, um tremendo profissional e um grande professor que foi quem me ensinou sobre os conteúdos do 1º semestre de SO.
+- Deixo aqui meus agradecimentos ao Leandro Colevati dos Santos, um tremendo profissional e um grande professor que foi quem me ensinou sobre os conteúdos do 1º semestre de BD.
 
 # **Meus Contatos** 📱
 

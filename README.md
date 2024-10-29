@@ -19,6 +19,10 @@ consulta, atualização e remoção).
     <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
 </div><br/>
 
+## **Créditos**
+
+- Deixo aqui meus agradecimentos ao Leandro Colevati dos Santos, um tremendo profissional e um grande professor que foi quem me ensinou sobre os conteúdos do 1º semestre de SO.
+
 # **Meus Contatos** 📱
 
 <div>

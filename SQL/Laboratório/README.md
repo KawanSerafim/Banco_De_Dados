@@ -1,4 +1,4 @@
-# **EXERCÍCIOS PARA CASA**
+# **EXERCÍCIOS EM LABORATÓRIO**
 
 ## Guia de Símbolos:
 

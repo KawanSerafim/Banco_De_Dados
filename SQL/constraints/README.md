@@ -8,7 +8,7 @@
 
 ## [ ✔️ ] Exercício da Aula 10 - Constraints 1
 
-(🗺️) - [[Código]]()
+(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/constraints/Ex_Constraints1.sql)
 
 ### Descrição:
 
@@ -46,7 +46,7 @@
 
 ## [ ✔️ ] Exercício da Aula 10 - Constraints 2
 
-(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Aula10_Casa_Ex_Constraints2.sql)
+(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/constraints/Ex_Constraints2.sql)
 
 ### Descrição:
 
@@ -90,7 +90,7 @@
 
 ## [ ✔️ ] Exercício da Aula 10 - Constraints 3
 
-(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Aula10_Casa_Ex_Constraints3.sql)
+(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/constraints/Ex_Constraints3.sql)
 
 ### Descrição:
 

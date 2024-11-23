@@ -52,7 +52,7 @@
 
 - [ ✔️ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma mecânica, conforme modelado:
 
-![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.59.33_12ff2830.jpg)
+![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.59.33_12ff2830.jpg)
 
 - Foram delimitadas as seguintes restrições:
     - [ ✔️ ] - *O ID do cliente é auto incremental partindo de 3401 e incrementando de 15 em 15*

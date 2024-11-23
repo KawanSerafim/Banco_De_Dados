@@ -1,4 +1,4 @@
-# **EXERCÍCIOS PARA CASA**
+# **EXERCÍCIOS EM SQL**
 
 ## Guia de Símbolos:
 
@@ -96,7 +96,7 @@
 
 - [ ✔️ ] - Criar as tabelas, em SQL Server, considerando o domínio de uma Maternidade, implementado na aula passada(https://pastebin.com/AuAJFJgP), conforme modelado:
 
-![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/Casa/Imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.50.28_25733604.jpg)
+![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-10-15%20à(s)%2015.50.28_25733604.jpg)
 
 - Foram delimitadas as seguintes restrições:
 

@@ -11,8 +11,7 @@ uma linguagem baseada em caracteres que suporte a definição do
 esquema físico (tabelas, restrições, etc.), e sua manipulação (inserção,
 consulta, atualização e remoção).
 
-- 📌 [Tarefas em SQL para Casa](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/Casa)
-- 📌 [Tarefas em SQL em Laboratório](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/Laboratório)
+- 📌 [Tarefas em SQL - Constraints](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/constraints)
 
 ## **Tecnologias utilizadas neste repositório 💻**
 <div style="display: inline_block">

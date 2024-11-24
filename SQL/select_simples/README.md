@@ -43,7 +43,7 @@
 - [ ✔️ ] - *Considerar as situações:*:
   - [ ✔️ ] - *O projeto de Manutenção atrasou, mudar a data para 12/09/2014.*
   - [ ✔️ ] - *O username de aparecido (usar o nome como condição de mudança) está feio, mudar para Rh_cido.*
-  - [ ✔️ ] - *Mudar o password do username Rh_maria (usar o username como condição de mudança) para 888@*, mas a condição deve verificar se o password dela ainda é 123mudar.*
+  - [ ✔️ ] - *Mudar o password do username Rh_maria (usar o username como condição de mudança) para 888@\*, mas a condição deve verificar se o password dela ainda é 123mudar.*
   - [ ✔️ ] - *O user de id 2 não participa mais do projeto 10002, removê-lo da associativa.*
  
 ## **Tecnologia(s) utilizadas neste exercício 💻**

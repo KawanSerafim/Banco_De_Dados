@@ -56,3 +56,70 @@
 - [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)
 
 ========================================================================================================================================================================================
+
+## [ ❌ ] Selects Simples 2
+
+(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples1.sql)
+
+### Descrição:
+
+- *Considere o diagrama abaixo:*
+
+![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-23%20à(s)%2022.33.06_82abe2ee.jpg)
+
+- [ ✔️ ] - *Restrições*:
+    - [ ✔️ ] - *Ano de filme deve ser menor ou igual a 2021.*
+    - [ ✔️ ] - *Data de fabricação de DVD deve ser menor do que hoje.*
+    - [ ✔️ ] - *Número do endereço de Cliente deve ser positivo.*
+    - [ ✔️ ] - *CEP do endereço de Cliente deve ter, especificamente, 8 caracteres.*
+    - [ ✔️ ] - *Data de locação de Locação, por padrão, deve ser hoje.*
+    - [ ✔️ ] - *Data de devolução de Locação, deve ser maior que a data de locação.*
+    - [ ✔️ ] - *Valor de Locação deve ser positivo.*
+ 
+- [ ✔️ ] - *Esquema:*
+    - [ ✔️ ] - *A entidade estrela deveria ter o nome real da estrela, com 50 caracteres.*
+    - [ ✔️ ] - *Verificando um dos nomes de filme, percebeu-se que o nome do filme deveria ser um atributo com 80 caracteres.*
+
+- [ ✔️ ] - *Inserir os dados abaixo na tabela Filme:*
+![Imagem da Tabela](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-24%20à(s)%2009.58.53_0784ccba.jpg)
+
+- [ ✔️ ] - *Inserir os dados abaixo na tabela Estrela:*
+![Imagem da Tabela](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-24%20à(s)%2009.59.07_e871af5f.jpg)
+- [ ✔️ ] - *Inserir os dados abaixo na tabela Filme_Estrela:*
+![Imagem da Tabela](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-24%20à(s)%2009.59.17_174c63ab.jpg)
+- [ ✔️ ] - *Inserir os dados abaixo na tabela DVD:*
+![Imagem da Tabela](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-24%20à(s)%2010.01.35_067b59d7.jpg)
+- [ ✔️ ] - *Inserir os dados abaixo na tabela Cliente:*
+![Imagem da Tabela](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-24%20à(s)%2009.59.43_59752067.jpg)
+- [ ✔️ ] - *Inserir os dados abaixo na tabela Locação:*
+![Imagem da Tabela](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-24%20à(s)%2009.59.55_14b0fff7.jpg)
+
+- [ ✔️ ] - *Operações com dados:*
+    - [ ✔️ ] - *Os CEP dos clientes 5503 e 5504 são 08411150 e 02918190 respectivamente.*
+    - [ ✔️ ] - *A locação de 2021-02-18 do cliente 5502 teve o valor de 3.25 para cada DVD alugado.*
+    - [ ✔️ ] - *A locação de 2021-02-24 do cliente 5501 teve o valor de 3.10 para cada DVD alugado.*
+    - [ ✔️ ] - *O DVD 10005 foi fabricado em 2019-07-14.*
+    - [ ✔️ ] - *O nome real de Miles Teller é Miles Alexander Teller.*
+    - [ ✔️ ] - *O filme Sing não tem DVD cadastrado e deve ser excluído.*
+
+- [ ❌ ] - *Consultar:*
+    - [ ✔️ ] - *Fazer um select que retorne os nomes dos filmes de 2014.*
+    - [ ✔️ ] - *Fazer um select que retorne o id e o ano do filme Birdman.*
+    - [ ✔️ ] - *Fazer um select que retorne o id e o ano do filme que tem o nome terminado por plash.*
+    - [ ✔️ ] - *Fazer um select que retorne o id, o nome e o nome_real da estrela cujo nome começa com Steve.*
+    - [ ❌ ] - *Fazer um select que retorne FilmeId e a data_fabricação em formato (DD/MM/YYYY) (apelidar de fab) dos filmes fabricados a partir de 01-01-2020.*
+    - [ ❌ ] - *Fazer um select que retorne DVDnum, data_locacao, data_devolucao, valor e valor com multa de acréscimo de 2.00 da locação do cliente 5505.*
+    - [ ❌ ] - *Fazer um select que retorne Logradouro, num e CEP de Matilde Luz.*
+    - [ ❌ ] - *Fazer um select que retorne Nome real de Michael Keaton.*
+    - [ ❌ ] - *Fazer um select que retorne o num_cadastro, o nome e o endereço completo, concatenando (logradouro, numero e CEP), apelido end_comp, dos clientes cujo ID é maior ou igual 5503.*
+
+## **Tecnologia(s) utilizadas neste exercício 💻**
+<div style="display: inline_block">
+    <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+</div><br/>
+
+## **Feito por 👤**
+
+- [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)
+
+========================================================================================================================================================================================

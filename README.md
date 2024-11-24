@@ -12,6 +12,7 @@ esquema físico (tabelas, restrições, etc.), e sua manipulação (inserção,
 consulta, atualização e remoção).
 
 - 📌 [Tarefas em SQL - Constraints](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/constraints)
+- 📌 [Tarefas em SQL - Select Simples](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/select_simples)
 
 ## **Tecnologias utilizadas neste repositório 💻**
 <div style="display: inline_block">

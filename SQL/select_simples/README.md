@@ -59,7 +59,7 @@
 
 ## [ ❌ ] Selects Simples 2
 
-(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples1.sql)
+(🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples2.sql)
 
 ### Descrição:
 

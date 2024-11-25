@@ -57,7 +57,7 @@
 
 ========================================================================================================================================================================================
 
-## [ ❌ ] Selects Simples 2
+## [ ✔️ ] Selects Simples 2
 
 (🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples2.sql)
 
@@ -102,16 +102,16 @@
     - [ ✔️ ] - *O nome real de Miles Teller é Miles Alexander Teller.*
     - [ ✔️ ] - *O filme Sing não tem DVD cadastrado e deve ser excluído.*
 
-- [ ❌ ] - *Consultar:*
+- [ ✔️ ] - *Consultar:*
     - [ ✔️ ] - *Fazer um select que retorne os nomes dos filmes de 2014.*
     - [ ✔️ ] - *Fazer um select que retorne o id e o ano do filme Birdman.*
     - [ ✔️ ] - *Fazer um select que retorne o id e o ano do filme que tem o nome terminado por plash.*
     - [ ✔️ ] - *Fazer um select que retorne o id, o nome e o nome_real da estrela cujo nome começa com Steve.*
-    - [ ❌ ] - *Fazer um select que retorne FilmeId e a data_fabricação em formato (DD/MM/YYYY) (apelidar de fab) dos filmes fabricados a partir de 01-01-2020.*
-    - [ ❌ ] - *Fazer um select que retorne DVDnum, data_locacao, data_devolucao, valor e valor com multa de acréscimo de 2.00 da locação do cliente 5505.*
-    - [ ❌ ] - *Fazer um select que retorne Logradouro, num e CEP de Matilde Luz.*
-    - [ ❌ ] - *Fazer um select que retorne Nome real de Michael Keaton.*
-    - [ ❌ ] - *Fazer um select que retorne o num_cadastro, o nome e o endereço completo, concatenando (logradouro, numero e CEP), apelido end_comp, dos clientes cujo ID é maior ou igual 5503.*
+    - [ ✔️ ] - *Fazer um select que retorne FilmeId e a data_fabricação em formato (DD/MM/YYYY) (apelidar de fab) dos filmes fabricados a partir de 01-01-2020.*
+    - [ ✔️ ] - *Fazer um select que retorne DVDnum, data_locacao, data_devolucao, valor e valor com multa de acréscimo de 2.00 da locação do cliente 5505.*
+    - [ ✔️ ] - *Fazer um select que retorne Logradouro, num e CEP de Matilde Luz.*
+    - [ ✔️ ] - *Fazer um select que retorne Nome real de Michael Keaton.*
+    - [ ✔️ ] - *Fazer um select que retorne o num_cadastro, o nome e o endereço completo, concatenando (logradouro, numero e CEP), apelido end_comp, dos clientes cujo ID é maior ou igual 5503.*
 
 ## **Tecnologia(s) utilizadas neste exercício 💻**
 <div style="display: inline_block">

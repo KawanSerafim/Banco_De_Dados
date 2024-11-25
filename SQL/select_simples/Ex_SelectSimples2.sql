@@ -103,14 +103,14 @@ VALUES
 (1001, 'Whiplash', 2015),
 (1002, 'Birdman', 2015),
 (1003, 'Interstelar', 2014),
-(1004, 'A Culpa é das estrelas', 2014),
-(1005, 'Alexandre e o Dia Terrível, Horrível, Espantoso e Horroroso', 2014),
+(1004, 'A Culpa Ã© das estrelas', 2014),
+(1005, 'Alexandre e o Dia TerrÃ­vel, HorrÃ­vel, Espantoso e Horroroso', 2014),
 (1006, 'Sing', 2016)
 GO
 
 INSERT INTO Estrela(id, nome, nome_real)
 VALUES
-(9901, 'Michael Kaeton', 'Michael John Douglas'),
+(9901, 'Michael Keaton', 'Michael John Douglas'),
 (9902, 'Emma Stone', 'Emily Jean Stone'),
 (9903, 'Miles Teller', NULL),
 (9904, 'Steve Carell', 'Steven John Carell'),
@@ -132,11 +132,11 @@ GO
 
 INSERT INTO Cliente(num_cadastro, nome, logradouro, num, cep)
 VALUES
-(5501, 'Matilde Luz', 'Rua Síria', 150, '03086040'),
+(5501, 'Matilde Luz', 'Rua SÃ­ria', 150, '03086040'),
 (5502, 'Carlos Carreiro', 'Rua Bartolomeu Aires', 1250, '04419110'),
 (5503, 'Daniel Ramalho', 'Rua Itajutiba', 169, NULL),
 (5504, 'Roberta Bento', 'Rua Jayme Von Rosenburg', 36, NULL),
-(5505, 'Rosa Cerqueira', 'Rua Arnaldo Simões Pinto', 235, '02917110')
+(5505, 'Rosa Cerqueira', 'Rua Arnaldo SimÃµes Pinto', 235, '02917110')
 GO
 
 INSERT INTO Locacao(DVDnum, Clientenum_cadastro, data_locacao, data_devolucao, valor)
@@ -173,7 +173,6 @@ WHERE nome = 'Miles Teller'
 
 DELETE FROM Filme
 WHERE titulo = 'Sing'
-*/
 
 SELECT titulo FROM Filme
 WHERE ano = 2014
@@ -183,6 +182,36 @@ WHERE titulo = 'Birdman'
 
 SELECT id, nome, nome_real FROM Estrela
 WHERE nome LIKE 'Steve%'
+
+SELECT Filmeid, CONVERT(VARCHAR(10), data_fabricacao, 103) AS fab
+FROM DVD
+WHERE data_fabricacao >= '01-01-2020'
+
+SELECT
+	DVDnum,
+	data_locacao,
+	data_devolucao,
+	valor,
+	valor + 2.00 AS multa_de_acrescimo
+FROM Locacao
+WHERE Clientenum_cadastro = 5505
+
+
+SELECT nome, logradouro, num, cep
+FROM Cliente
+WHERE nome = 'Matilde Luz'
+
+SELECT nome_real
+FROM Estrela
+WHERE nome = 'Michael Keaton'
+
+SELECT
+	num_cadastro,
+	nome,
+	logradouro + ', NÂº ' + CAST(num AS VARCHAR(10)) + ', CEP: ' + cep AS end_comp
+FROM Cliente
+WHERE num_cadastro >= 5503
+*/
 
 SELECT * FROM Filme
 SELECT * FROM Filme_Estrela

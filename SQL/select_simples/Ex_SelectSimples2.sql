@@ -91,7 +91,7 @@ GO
 
 /*
 ALTER TABLE Estrela
-ALTER COLUMN nome_real VARCHAR(50) NULL
+ADD nome_real VARCHAR(50) NULL
 GO
 
 ALTER TABLE Filme

@@ -11,37 +11,104 @@
 - [ 📑 ] *Primeiro, começo escrevendo, em comentário mesmo, dois comandos que servirão na necessidade de resetar a database. Os comandos são:*
 
       USE master
-      DROP DATABASE 'nome_da_database'
+      DROP DATABASE nome_da_database
 
 - [ 📑 ] *Basta selecionar somente essas duas linhas e clicar para executar no Microsoft SQL Server Management Studio, que o trabalho foi feito. Só selecionar todo o código novamente (isso com os dois comandos citado em comentário), e colocar para executar que a database foi resetada.*
 
 - [ 📑 ] *Agora, para finalmente criar a database, há dois passos e 4 comandos, que são:*
 
-      CREATE DATABASE 'nome_da_database'
+      CREATE DATABASE nome_da_database
       GO
-      USE 'nome_da_database'
+      USE nome_da_database
       GO    
 
 - [ 📑 ] *O uso do GO é para que sejam executados os comandos em passo a passo. Para a criação de tabelas, o corpo do código é bem básico, onde você delimita onde inicia e onde finaliza com parênteses. Entre esses delimitadores, é onde determina os atributos/colunas da tabela, especificando o tipo e se pode iniciar vazio ou não.*
 
 - [ 📑 ] *As keys são bem simples de serem declaradas, onde a PRIMARY KEY é apenas colocar o nome do atributo que vai ser a chave primária dentro de um parênteses, enquanto a FOREIGN KEY é um pouquinho mais verboso, precisando, também colocar daonde está referenciando, citando a tabela e o nome do atributo dessa tabela que a chave referencia. Agora, as restrições ficam depois do NULL/NOT NULL.*
 
-      CREATE TABLE 'nome_da_tabela' (
+      CREATE TABLE nome_da_tabela (
   
-      nome_atributo1        TIPO        NULL/NOT NULL        IDENTITY(1, 1),
-      nome_atributo2        TIPO        NULL/NOT NULL        CHECK(nome_atributo2 > 0)
+      nome_coluna1        TIPO        NULL/NOT NULL        IDENTITY(1, 1),
+      nome_coluna2        TIPO        NULL/NOT NULL        CHECK(nome_coluna2 > 0)
 
-      PRIMARY KEY(nome_atributo1)
-      FOREIGN KEY(nome_atributo2) REFERENCES 'tabela_referenciada'('atributo_estrangeiro')
+      PRIMARY KEY(nome_coluna1)
+      FOREIGN KEY(nome_coluna2) REFERENCES tabela_referenciada(atributo_estrangeiro)
   
       )
       GO
 
 - [ 📑 ] *Se há mais de um atributo na tabela, é obrigatório o uso de vírgula no final da linha, mas podendo quebrar a linha a fim de organizar o código, apenas precisando colocar a vírgula no final, como se fosse tudo numa linha só. Isso também vale para as chaves e outros comandos.*
 
-- [ 📑 ] *.*
+- [ 📑 ] *Para adicionar um novo atributo/coluna em uma tabela, é usado dois comandos:*
 
-- **Em desenvolvimento...**
+      ALTER TABLE tabela
+      ADD nome_coluna    TIPO    NULL/NOT NULL
+      GO
+
+- [ 📑 ] *Para poder realizar a alteração num atributo/coluna, como o seu tamanho, é usado dois comandos:*
+
+      --Quero alterar a coluna "exemplo", que é um VARCHAR(10) para VARCHAR(50)
+
+      ALTER TABLE tabela
+      ALTER COLUMN exemplo    VARCHAR(50)    NOT NULL
+      GO
+
+- [ 📑 ] *Para colocar dados em uma tabela, se usa o INSERT INTO, onde tem um parênteses que é para colocar os atributos que terão dados inseridos, e, após isso, no VALUES(), os dados devem ser inseridos na ordem respectiva dos atributos. No caso de adicionar mais linhas, basta colocar uma vírgula e continuar adicionando. Exemplo:*
+
+      INSERT INTO tabela(coluna1, coluna2) VALUES
+      (dado1, dado2),
+      (dado1, dado2)
+      GO
+
+- [ 📑 ] *Para alterar o conteúdo de uma coluna específica, vai precisar do UPDATE, e se for de uma linha em específico, é necessário de uma função condicional que é o WHERE, justamente para direcionar a linha certa, evitando trocar de todas as linhas daquela coluna. Se precisar de mais de uma condição, basta colocar AND após a primeira condição, e colocar a próxima, sem a necessidade de repetir o WHERE. Exemplo:*
+
+      --Quero alterar o conteúdo da linha2 da coluna_x, e minha referência
+      --daquela linha é a linha_2 da coluna_y e a linha_2 da coluna_z
+
+      UPDATE tabela SET coluna = 'novo dado'
+      WHERE coluna_y = 'dado da linha_2 da coluna_y' AND
+      coluna_z = 'dado da linha_2 da coluna_z'
+
+- [ 📑 ] *Para exibir tudo de uma tabela, basta utilizar o:*
+
+      SELECT * FROM tabela
+
+- [ 📑 ] *Mas, como nem sempre queremos todo o conteúdo da tabela, para exibir apenas as colunas de interesse, o comando é:*
+
+      SELECT coluna1, coluna2 FROM tabela
+
+- [ 📑 ] *Agora, quando necessário acessar apenas linhas específicas das colunas, se utiliza a função condicional WHERE.*
+
+      --Quero acessar a linha5 das colunas1 e coluna2, e minha referência
+      --vai ser que as linhas devem ter uma linha de dado x na coluna3
+
+      SELECT coluna1, coluna2 FROM tabela
+      WHERE coluna3 = x
+
+- [ 📑 ] *E quando eu quero selecionar uma linha de uma determinada coluna quando tiver 'exemplo' no conteúdo? Simples.*
+
+      SELECT coluna FROM tabela
+      WHERE coluna LIKE '%exemplo%'
+
+- [ 📑 ] *O símbolo de porcentagem serve para indicar que pode ou não conter conteúdo além do 'exemplo'. Se vai ter conteúdo só depois, utiliza o símbolo no final, se vai só vai ter antes, utiliza no início, e se poder ter tanto antes quanto depois, coloca no início e no final.*
+
+- [ 📑 ] *Quando necessário uma exibição mais detalhada, como concatenar colunas, atribuir uma regra na coluna em um caso específico, sem alterar a lógica real daquela coluna, é necessário:*
+
+      --Quero concatenar coluna1 e coluna2
+
+      SELECT coluna1 + coluna2 FROM tabela
+
+      --Quero exibir coluna1 + 10 numa nova coluna
+
+      SELECT
+          coluna1 + 10 AS coluna1_somado
+      FROM tabela
+
+- [ 📑 ] *Para coletar a data atual, se utiliza o GETDATE(), e para colocar no padrão DD/MM/YYYY:*
+
+      SELECT CONVERT(VARCHAR(10), GETDATE(), 103) AS data_de_hoje
+
+- [ 📑 ] *No caso de haver uma coluna já com uma data, e a necessidade seja de exibir essa data no padrão brasileiro, basta trocar o GETDATE() pela coluna.
 
 ## [ ✔️ ] Selects Simples 1
 

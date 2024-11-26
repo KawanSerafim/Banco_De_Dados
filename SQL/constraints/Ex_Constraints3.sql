@@ -1,3 +1,8 @@
+/*
+USE master
+DROP DATABASE livraria
+*/
+
 CREATE DATABASE maternidade
 GO
 USE maternidade

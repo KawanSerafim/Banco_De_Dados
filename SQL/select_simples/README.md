@@ -6,6 +6,43 @@
 
     [ ✔️ ] - Finalizado.
 
+## Contexto para cada Operação:
+
+- [ 📑 ] *Primeiro, começo escrevendo, em comentário mesmo, dois comandos que servirão na necessidade de resetar a database. Os comandos são:*
+
+      USE master
+      DROP DATABASE 'nome_da_database'
+
+- [ 📑 ] *Basta selecionar somente essas duas linhas e clicar para executar no Microsoft SQL Server Management Studio, que o trabalho foi feito. Só selecionar todo o código novamente (isso com os dois comandos citado em comentário), e colocar para executar que a database foi resetada.*
+
+- [ 📑 ] *Agora, para finalmente criar a database, há dois passos e 4 comandos, que são:*
+
+      CREATE DATABASE 'nome_da_database'
+      GO
+      USE 'nome_da_database'
+      GO    
+
+- [ 📑 ] *O uso do GO é para que sejam executados os comandos em passo a passo. Para a criação de tabelas, o corpo do código é bem básico, onde você delimita onde inicia e onde finaliza com parênteses. Entre esses delimitadores, é onde determina os atributos/colunas da tabela, especificando o tipo e se pode iniciar vazio ou não.*
+
+- [ 📑 ] *As keys são bem simples de serem declaradas, onde a PRIMARY KEY é apenas colocar o nome do atributo que vai ser a chave primária dentro de um parênteses, enquanto a FOREIGN KEY é um pouquinho mais verboso, precisando, também colocar daonde está referenciando, citando a tabela e o nome do atributo dessa tabela que a chave referencia. Agora, as restrições ficam depois do NULL/NOT NULL.*
+
+      CREATE TABLE 'nome_da_tabela' (
+  
+      nome_atributo1        TIPO        NULL/NOT NULL        IDENTITY(1, 1),
+      nome_atributo2        TIPO        NULL/NOT NULL        CHECK(nome_atributo2 > 0)
+
+      PRIMARY KEY(nome_atributo1)
+      FOREIGN KEY(nome_atributo2) REFERENCES 'tabela_referenciada'('atributo_estrangeiro')
+  
+      )
+      GO
+
+- [ 📑 ] *Se há mais de um atributo na tabela, é obrigatório o uso de vírgula no final da linha, mas podendo quebrar a linha a fim de organizar o código, apenas precisando colocar a vírgula no final, como se fosse tudo numa linha só. Isso também vale para as chaves e outros comandos.*
+
+- [ 📑 ] *.*
+
+- **Em desenvolvimento...**
+
 ## [ ✔️ ] Selects Simples 1
 
 (🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples1.sql)

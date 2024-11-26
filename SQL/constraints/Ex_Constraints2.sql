@@ -1,3 +1,8 @@
+/*
+USE master
+DROP DATABASE mecanica
+*/
+
 CREATE DATABASE mecanica
 GO
 USE mecanica

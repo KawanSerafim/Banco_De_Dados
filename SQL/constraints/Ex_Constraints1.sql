@@ -1,3 +1,8 @@
+/*
+USE master
+DROP DATABASE livraria
+*/
+
 CREATE DATABASE livraria
 GO
 USE livraria

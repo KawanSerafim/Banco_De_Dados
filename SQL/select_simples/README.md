@@ -108,7 +108,7 @@
 
       SELECT CONVERT(VARCHAR(10), GETDATE(), 103) AS data_de_hoje
 
-- [ 📑 ] *No caso de haver uma coluna já com uma data, e a necessidade seja de exibir essa data no padrão brasileiro, basta trocar o GETDATE() pela coluna.
+- [ 📑 ] *No caso de haver uma coluna já com uma data, e a necessidade seja de exibir essa data no padrão brasileiro, basta trocar o GETDATE() pela coluna.*
 
 ## [ ✔️ ] Selects Simples 1
 

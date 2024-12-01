@@ -8,7 +8,7 @@
 
 ## Contexto para cada Operação:
 
-### Primeiro exercício:
+### 📍 - Primeiro exercício:
 
 - [ 📑 ] *O começo do código não é mais criando a database, e sim usando uma que já existe. Para isso, basta escrever assim:*
 
@@ -69,7 +69,7 @@
       FROM tabela
       WHERE coluna1 LIKE '%texto para encontrar%'
 
-### Segundo exercício:
+### 📍 - Segundo exercício:
 
 - [ 📑 ] *O começo também não é criando a data base, e sim utilizando uma que existe. O código se mantém:*
 

@@ -22,7 +22,7 @@
 
 - [ 📑 ] *Agora, a primeira consulta que pede para que seja 2 maneiras de exibir a senha dos usuário, uma com o default '123mudar', outra com '\*\*\*\*\*\*\*\*', no caso da senha for diferente do default. Para isso ser possível, é necessário uma função condicional mais trabalhada que apenas o WHERE. Para isso, basta escrever assim:*
 
-      CASE WHEN('condicao')
+      CASE WHEN(condicao)
           THEN
               --decisao se condição for positiva
           ELSE

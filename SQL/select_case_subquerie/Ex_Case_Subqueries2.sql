@@ -10,7 +10,7 @@ SELECT * FROM Cliente
 
 SELECT
 	id,
-	CASE WHEN(LEN(titulo) >= 10)
+	CASE WHEN(LEN(titulo) > 10)
 		THEN
 			SUBSTRING(titulo, 1, 10) + '...'
 		ELSE

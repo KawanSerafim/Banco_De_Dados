@@ -110,6 +110,8 @@
 
 - [ 📑 ] *No caso de haver uma coluna já com uma data, e a necessidade seja de exibir essa data no padrão brasileiro, basta trocar o GETDATE() pela coluna.*
 
+========================================================================================================================================================================================
+
 ## [ ✔️ ] Selects Simples 1
 
 (🗺️) - [[Código]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples1.sql)

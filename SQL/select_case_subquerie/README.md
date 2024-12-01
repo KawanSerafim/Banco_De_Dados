@@ -101,3 +101,33 @@
 - [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)
 
 ========================================================================================================================================================================================
+
+## [ ❌ ] Selects Case Subquerie 2
+
+(🗺️) - [[Código - Select Case Subquerie]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_case_subquerie/Ex_Case_Subqueries2.sql)
+
+### Descrição:
+
+- [ 📑 ] *A data base usada foi a mesma de um exercício feito em Select Simples. O código está logo abaixo em Código - Select Simples:*
+
+- (🗺️) - [[Código - Select Simples]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples2.sql)
+
+- *Considere o diagrama abaixo:*
+
+![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-23%20à(s)%2022.33.06_82abe2ee.jpg)
+
+- [ ❌ ] - *Fazer uma consulta que retorne ID, Ano, nome do Filme (Caso o nome do filme tenha mais de 10 caracteres, para caber no campo da tela, mostrar os 10 primeiros caracteres, seguidos de reticências ...) dos filmes cujos DVDs foram fabricados depois de 01/01/2020.*
+- [ ❌ ] - *Fazer uma consulta que retorne num, data_fabricacao, qtd_meses_desde_fabricacao (Quantos meses desde que o dvd foi fabricado até hoje) do filme Interestelar.*
+- [ ❌ ] - *Fazer uma consulta que retorne num_dvd, data_locacao, data_devolucao, dias_alugado(Total de dias que o dvd ficou alugado) e valor das locações da cliente que tem, no nome, o termo Rosa.*
+- [ ❌ ] - *Nome, endereço_completo (logradouro e número concatenados), cep (formato XXXXX-XXX) dos clientes que alugaram DVD de num 10002.*
+
+## **Tecnologia(s) utilizadas neste exercício 💻**
+<div style="display: inline_block">
+    <img align="center" alt="html5" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+</div><br/>
+
+## **Feito por 👤**
+
+- [👨‍💻] - [Kawan Serafim](https://github.com/KawanSerafim)
+
+========================================================================================================================================================================================

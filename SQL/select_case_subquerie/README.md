@@ -8,6 +8,8 @@
 
 ## Contexto para cada Operação:
 
+### Primeiro exercício:
+
 - [ 📑 ] *O começo do código não é mais criando a database, e sim usando uma que já existe. Para isso, basta escrever assim:*
 
       USE database

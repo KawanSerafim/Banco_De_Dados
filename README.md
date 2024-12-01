@@ -13,7 +13,7 @@ consulta, atualização e remoção).
 
 - 📌 [Tarefas em SQL - Constraints](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/constraints)
 - 📌 [Tarefas em SQL - Select Simples](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/select_simples)
-- 📌 [Tarefas em SQL - Select Simples](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/select_case_subquerie)
+- 📌 [Tarefas em SQL - Select Case Subquerie](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/select_case_subquerie)
 
 ## **Tecnologias utilizadas neste repositório 💻**
 <div style="display: inline_block">

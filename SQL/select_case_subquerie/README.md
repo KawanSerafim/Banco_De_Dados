@@ -1,4 +1,4 @@
-# **EXERCÍCIOS EM SQL - SELECTS SIMPLES**
+# **EXERCÍCIOS EM SQL - SELECTS CASE SUBQUERIE**
 
 ## Guia de Símbolos:
 
@@ -69,6 +69,66 @@
       FROM tabela
       WHERE coluna1 LIKE '%texto para encontrar%'
 
+### Segundo exercício:
+
+- [ 📑 ] *O começo também não é criando a data base, e sim utilizando uma que existe. O código se mantém:*
+
+      USE database
+      GO
+  
+- [ 📑 ] *Também usei selects que informa todos os dados de cada tabela da data base. O código se mantém:*
+
+      --Na necessidade de consultar mais de uma tabela, basta repetir
+      --trocando apenas o nome da tabela
+
+      SELECT * FROM tabela
+
+- [ 📑 ] *Agora, a primeira consulta pede duas maneiras de exibir o titulo de um filme, uma com reticências '...', após cortar o texto a partir do 11º caractere, outra simplesmente colocando o titulo. Para isso, basta escrever assim:*
+
+      CASE WHEN(LEN(coluna) > 10)
+          THEN
+              SUBSTRING(coluna, 1, 10) + '...'    --nome com mais de 10 caracteres
+          ELSE
+              titulo    --nome com 10 ou menos caracteres
+      CASE AS nova_coluna
+
+- [ 📑 ] *A segunda consulta pede para contar quantos meses são da data de fabricação do DVD do filme interstelar. Ou seja, vai ser necessário o DATEDIFF, trocando DAY por MONTH e uma subquerie. Para isso, basta escrever assim:*
+
+      SELECT
+          DATEDIFF(MONTH, data_fabricacao, GETDATE()) AS nova_coluna
+      FROM dvd
+      WHERE id_filme IN
+      (
+          SELECT id
+          FROM filme
+          WHERE coluna = '%filme_especifico%'
+      )
+
+- [ 📑 ] *A terceira consulta pede para exibir a quantidade de dias que ficou alugado um DVD, com o cliente com Rosa no nome. Aqui também é necessário o DATEDIFF, mantendo o DAY, e uma subquerie. Para isso, basta escrever assim:*
+
+      SELECT
+          DATEDIFF(DAY, data_inicial, data_final) AS nova_coluna
+      FROM locacao
+      WHERE id_cliente IN
+      (
+          SELECT id
+          FROM cliente
+          WHERE nome LIKE '%Rosa%'
+      )
+
+- [ 📑 ] *A quarta e última consulta pede para exibir endereço completo, possível com concatenação, explicado em [Select Simples](https://github.com/KawanSerafim/Banco_De_Dados/tree/main/SQL/select_simples), com um diferencial que aqui vai ser necessário o CONVERT para trasnformar as colunas inteiras para varchar; e cep em formato 'XXXXX-XXX' dos clientes que alugaram um DVD específico. Para isso, basta escrever assim:*
+
+      SELECT
+          CONVERT(VARCHAR(100), parte_endereco) + ', Nº' +
+          CONVERT(VARCHAR(10), num_endereco) AS endereco_completo
+      FROM cliente
+      WHERE id IN
+      (
+          SELECT id_cliente
+          FROM locacao
+          WHERE id_dvd = id_unico    
+      )
+
 ========================================================================================================================================================================================
 
 ## [ ✔️ ] Selects Case Subquerie 1
@@ -117,7 +177,7 @@
 ![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-23%20à(s)%2022.33.06_82abe2ee.jpg)
 
 - [ ✔️ ] - *Fazer uma consulta que retorne ID, Ano, nome do Filme (Caso o nome do filme tenha mais de 10 caracteres, para caber no campo da tela, mostrar os 10 primeiros caracteres, seguidos de reticências ...) dos filmes cujos DVDs foram fabricados depois de 01/01/2020.*
-- [ ✔️ ] - *Fazer uma consulta que retorne num, data_fabricacao, qtd_meses_desde_fabricacao (Quantos meses desde que o dvd foi fabricado até hoje) do filme Interestelar.*
+- [ ✔️ ] - *Fazer uma consulta que retorne num, data_fabricacao, qtd_meses_desde_fabricacao (Quantos meses desde que o dvd foi fabricado até hoje) do filme Interstelar.*
 - [ ✔️ ] - *Fazer uma consulta que retorne num_dvd, data_locacao, data_devolucao, dias_alugado(Total de dias que o dvd ficou alugado) e valor das locações da cliente que tem, no nome, o termo Rosa.*
 - [ ✔️ ] - *Nome, endereço_completo (logradouro e número concatenados), cep (formato XXXXX-XXX) dos clientes que alugaram DVD de num 10002.*
 

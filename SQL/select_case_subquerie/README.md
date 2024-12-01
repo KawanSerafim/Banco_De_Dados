@@ -32,7 +32,7 @@
 - [ 📑 ] *A segunda consulta pede para consultar, além dos dados normais, a data final de um projeto após 15 dias, isso de um usuário com um email específico. Para isso ser possível, é necessário utilizar de mais de uma tabela, logo, aqui é necessário o uso de subqueries.*
 - *Antes de tudo, para descobrir a data de 15 dias depois, basta escrever assim:*
 
-      DATEAADD(DAY, 15, data) AS data_15_dias_depois
+      DATEADD(DAY, 15, data) AS data_15_dias_depois
 
 - *A trilha até a resposta é: "descobrir o id do projeto que esteja associado ao id de um usuário que tenha o email em específico". Para isso, basta escrever assim (isso também vai valer para a  terceira consulta, que exige o mesmo processo, apenas com condições diferentes):*
 

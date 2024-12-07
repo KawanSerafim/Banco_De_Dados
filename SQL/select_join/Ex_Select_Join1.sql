@@ -10,7 +10,7 @@ INSERT INTO users(_name, username, _password, email) VALUES
 GO
 
 INSERT INTO projects(_name, _description, _date) VALUES
-('Atualização de Sistemas', 'Modificação de Sistemas Operacionais nos PC´s', '12/09/2014')
+('AtualizaÃ§Ã£o de Sistemas', 'ModificaÃ§Ã£o de Sistemas Operacionais nos PCÂ´s', '12/09/2014')
 GO
 
 ------------------------------------------------------------------
@@ -27,14 +27,7 @@ INNER JOIN users_has_projects
 ON users_has_projects.users_id = users.id
 INNER JOIN projects
 ON users_has_projects.projects_id = projects.id
-GROUP BY 
-	users.id, 
-	users._name, 
-	users.email, 
-	projects._name, 
-	projects._description, 
-	projects._date
-HAVING projects._name = 'Re-folha'
+WHERE projects._name = 'Re-folha'
 
 ------------------------------------------------------------------
 

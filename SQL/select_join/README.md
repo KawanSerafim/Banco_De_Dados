@@ -26,11 +26,11 @@
 
 ![Imagem da Modelagem](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/imagens/Imagem%20do%20WhatsApp%20de%202024-11-23%20à(s)%2022.08.09_fee28da8.jpg)
 
-- [ ❌ ] - **Adicionar User:**
+- [ ✔️ ] - **Adicionar User:**
   - *(6; Joao; Ti_joao; 123mudar; joao@empresa.com).*
-- [ ❌ ] - **Adicionar Project:**
+- [ ✔️ ] - **Adicionar Project:**
   - *(10004; Atualização de Sistemas; Modificação de Sistemas Operacionais nos PC's; 12/09/2014).*
-- [ ❌ ] - **Consultar:**
+- [ ✔️ ] - **Consultar:**
   - *Id, Name e Email de Users, Id, Name, Description e Data de Projects, dos usuários que participaram do projeto Name Re-folha.*
   - *Name dos Projects que não tem Users.*
   - *Name dos Users que não tem Projects.*

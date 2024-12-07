@@ -46,7 +46,7 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-### [❌] - Segundo exercício:
+### [✔️] - Segundo exercício:
 
 - [🗺️] - [[Código - Select Join]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_join/Ex_Select_Join2.sql)
 
@@ -64,12 +64,12 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-- [❌] - *Consultar num_cadastro do cliente, nome do cliente, data_locacao (Formato
+- [✔️] - *Consultar num_cadastro do cliente, nome do cliente, data_locacao (Formato
 dd/mm/aaaa), Qtd_dias_alugado (total de dias que o filme ficou alugado), titulo do
 filme, ano do filme da locação do cliente cujo nome inicia com Matilde.*
-- [❌] - *Consultar nome da estrela, nome_real da estrela, título do filme dos filmes
+- [✔️] - *Consultar nome da estrela, nome_real da estrela, título do filme dos filmes
 cadastrados do ano de 2015.*
-- [❌] - *Consultar título do filme, data_fabricação do dvd (formato dd/mm/aaaa), caso a
+- [✔️] - *Consultar título do filme, data_fabricação do dvd (formato dd/mm/aaaa), caso a
 diferença do ano do filme com o ano atual seja maior que 6, deve aparecer a diferença
 do ano com o ano atual concatenado com a palavra anos (Exemplo: 7 anos), caso
 contrário só a diferença (Exemplo: 4).*

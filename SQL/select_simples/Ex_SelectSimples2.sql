@@ -117,6 +117,14 @@ VALUES
 (9905, 'Jennifer Garner', 'Jennifer Anne Garner')
 GO
 
+INSERT INTO Filme_Estrela(Filmeid, Estrelaid) VALUES
+(1002,9901),
+(1002,9902),
+(1001,9903),
+(1005,9904),
+(1005,9905)
+GO
+
 INSERT INTO DVD(num, data_fabricacao, Filmeid)
 VALUES
 (10001, '2020-12-02', 1001),

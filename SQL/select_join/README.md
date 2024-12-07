@@ -1,4 +1,4 @@
-# **EXERCÍCIOS EM SQL - SELECTS CASE SUBQUERIE**
+# **EXERCÍCIOS EM SQL - SELECTS JOIN**
 
 ## Guia de Símbolos:
 

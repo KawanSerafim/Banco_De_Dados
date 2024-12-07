@@ -18,7 +18,7 @@
 
 - [ 📑 ] - *A data base usada foi a mesma de um exercício feito em Select Simples. O código está logo abaixo em Código - Select Simples:*
 
-- [ 🗺️ ] - [[Código - Select Simples]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_simples/Ex_SelectSimples1.sql)
+- [ 🗺️ ] - [[Código - Select Simples]](https://github.com/KawanSerafim/Banco_De_Dados/blob/main/SQL/select_join/Ex_Select_Join1.sql)
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
